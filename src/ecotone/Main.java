@@ -38,8 +38,8 @@ public class Main extends WorldGeom
   @Override
   public void setUpWorld()
   {
-    GeomTextOutset phrase = new GeomTextBuilder("hi Karl!").anchor(new Point3f()).
-      exactBounds(true).constrainByHeight(1f).build();
+    //GeomTextOutset phrase = new GeomTextBuilder("hi Karl!").anchor(new Point3f()).
+      //exactBounds(true).constrainByHeight(1f).build();
     //addGeom(phrase);
 
     //make an ecotone builder -- i.e. seed with nutrients, plants, etc, various parameters
