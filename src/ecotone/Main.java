@@ -4,6 +4,7 @@
  */
 package ecotone;
 
+import java.util.Properties;
 import behaviorism.BehaviorismDriver;
 import behaviors.Behavior.LoopEnum;
 import behaviors.BehaviorDiscrete.DiscreteBehaviorBuilder;
@@ -30,7 +31,8 @@ public class Main extends WorldGeom
   public static void main(String[] args)
   {
     WorldGeom world = new Main();
-    new BehaviorismDriver(world);
+    Properties properties = loadPropertiesFile("behaviorism.properties");
+    new BehaviorismDriver(world, properties);
   }
 
   @Override
